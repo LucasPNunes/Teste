@@ -26,10 +26,6 @@ Antes de rodar o projeto, certifique-se de ter as seguintes dependências instal
 
 ### **2. Dependências Backend (ASP.NET Core)**
 
-- **Visual Studio ou Visual Studio Code**: Para editar e executar o código C#.
-  - [Download do Visual Studio](https://visualstudio.microsoft.com/)
-  - [Download do Visual Studio Code](https://code.visualstudio.com/)
-  
 - **SQL Server**.
   - [Download do SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
   
@@ -59,10 +55,11 @@ cd <diretorio-do-repositorio>
 - Também é necessario um usuario chamado root cadastrado com a senha `123@` que tenha acesso a base Litoral. 
 
 A string de conexão está no arquivo `appsettings.json` e se parece com isso:
+É necessario alterar a string de conexão para rodar na sua maquina.
 
 ```json
 "ConnectionStrings": {
-  "DBConnection": "Server=localhost\\SQLEXPRESS;Database=Litoral;User Id=root;Password=123@;TrustServerCertificate=true;"
+  "DBConnection": "Server=<Sua conexão SQL Server>;Database=Litoral;User Id=root;Password=123@;TrustServerCertificate=true;"
 }
 ```
 
