@@ -165,4 +165,4 @@ C:\Users\lucas\RiderProjects\VendasLitoral\bin\Debug\net8.0\src\FrontEnd\package
 C:\Users\lucas\RiderProjects\VendasLitoral\bin\Debug\net8.0\src\FrontEnd\tsconfig.app.json
 C:\Users\lucas\RiderProjects\VendasLitoral\bin\Debug\net8.0\src\FrontEnd\tsconfig.json
 C:\Users\lucas\RiderProjects\VendasLitoral\bin\Debug\net8.0\src\FrontEnd\tsconfig.spec.json
-C:\Users\lucas\RiderProjects\VendasLitoral\bin\Debug\net8.0\src\FrontEnd\dist\litoral\prerendered-routes.json
+C:\Users\lucas\RiderProjects\VendasLitoral\obj\Debug\net8.0\VendasLitoral.sourcelink.json

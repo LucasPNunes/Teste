@@ -25,11 +25,6 @@ builder.Services.AddDbContext<ConnectionContext>(options =>
     options.UseSqlServer(connectionString)
 );
 
-builder.WebHost.ConfigureKestrel(options =>
-{
-    options.ListenAnyIP(8080);
-});
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
@@ -44,9 +39,7 @@ builder.Services.AddCors(options =>
 var app = builder.Build();
 
 app.UseCors("AllowAll");
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-app.UseRouting();
+
 app.MapControllers();
 
 if (app.Environment.IsDevelopment())
