@@ -1,0 +1,40 @@
+﻿version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - app-network
+    depends_on:
+      - db 
+
+  frontend:
+    build:
+      context: ./src/FrontEnd/
+      dockerfile: Dockerfile
+    ports:
+      - "4200:80"
+    networks:
+      - app-network
+  db:
+    image: mcr.microsoft.com/mssql/server:latest
+    container_name: sql_server_container
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=SenhaForte123@!
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+    volumes:
+      - sql_data:/var/opt/mssql
+networks:
+  app-network:
+    driver: bridge
+    
+volumes:
+  sql_data:

@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/": {},
+    "/clientes": {},
+    "/dashboard": {},
+    "/pedidos": {},
+    "/relatorios": {},
+    "/vendedores": {}
+  }
+}
