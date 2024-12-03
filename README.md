@@ -1,11 +1,3 @@
----
-
-# **README: Como Rodar o Projeto**
-
-Este projeto consiste em duas partes principais: o **Backend** (ASP.NET Core) e o **Frontend** (Angular). Abaixo estão as instruções para rodar ambos os sistemas localmente, sem o uso do Docker.
-
----
-
 ## **Pré-requisitos**
 
 Antes de rodar o projeto, certifique-se de ter as seguintes dependências instaladas na sua máquina:
