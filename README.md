@@ -36,8 +36,7 @@ Antes de rodar o projeto, certifique-se de ter as seguintes dependências instal
 Primeiro, clone o repositório para sua máquina:
 
 ```bash
-git clone <url-do-repositorio>
-cd <diretorio-do-repositorio>
+git clone https://github.com/LucasPNunes/Teste.git
 ```
 
 ### **2. Configuração do Banco de Dados**
